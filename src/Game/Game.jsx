@@ -38,9 +38,11 @@ export const Game = () => {
       else {
         description = 'Go to game start';
       }
+
       const locateX = getRowAndColumnFromPosition(location[move],3).row;
       const locateY = getRowAndColumnFromPosition(location[move],3).column;
       const stringLocated = ` (${locateX}, ${locateY})`
+      
       if(move == currentMove && move > 0){
         return (
             <li key={move}>
